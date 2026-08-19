@@ -1,23 +1,24 @@
-name: RUN PYTHON FILE
+name: INSTALL PYTHON
 on:
   push:
     branches:
      - master
 jobs:
-  hell-job:
+  python-job:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout repo
+    - name: CHECKOUT REPO
       uses: actions/checkout@v4
 
-    - name: set-up python
+    - name: SET-UP PYTHON
       uses: actions/setup-python@v5
       with:
-        python-version: "3.13"
+        python--version: "3.13"
 
-    - name: run python
-      run: python hello.py
+    - name: RUN PYTHON
+      run: python test.txt
 
-    - name: python version
+    - name: PYTHON VERSION
       run: python --version
+      
