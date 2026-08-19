@@ -17,7 +17,7 @@ jobs:
         python-version: "3.13"
 
     - name: RUN PYTHON
-      run: python test.txt
+      run: python text.txt
 
     - name: PYTHON VERSION
       run: python --version
