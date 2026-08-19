@@ -26,4 +26,7 @@ jobs:
 
     - name: PYTHON VERSION
       run: python --version
+
+    - name: DOCKER IMAGE
+      run: docker build -t hello-python .
       
