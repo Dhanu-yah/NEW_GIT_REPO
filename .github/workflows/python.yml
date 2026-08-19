@@ -1,0 +1,19 @@
+name: RUN PYTHON FILE
+on:
+  push:
+    branches:
+     - master
+jobs:
+  hell-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      users: actions/checkout@v4
+    - name: set-up python
+      users: actions/set-up python@v5
+      with:
+        python --version: "3.13"
+    - name: run python
+      run: python hello.py
+    - name: python version
+      run: python --version
