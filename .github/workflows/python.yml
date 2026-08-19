@@ -15,9 +15,14 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.13"
+    - name: INSTALL PYTHON DEPENDENCIES
+      run: pip install -r requirements.txt
 
-    - name: RUN PYTHON
+    - name: RUN PYTHON FILE
       run: python text.txt
+
+    - name: run python file
+      run: python hello.py
 
     - name: PYTHON VERSION
       run: python --version
