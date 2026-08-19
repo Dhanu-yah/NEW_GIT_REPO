@@ -1,0 +1,11 @@
+name: FIRST COMMIT
+on:
+  push:
+    branch:
+      - master
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: FIRST COMMIT FROM NEW GIT
+      run: HELLO TO EVERYONE
