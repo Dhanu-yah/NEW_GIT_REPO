@@ -24,6 +24,9 @@ jobs:
     - name: run python file
       run: python hello.py
 
+    - name: run python file
+      run: python hell.py
+
     - name: PYTHON VERSION
       run: python --version
 
