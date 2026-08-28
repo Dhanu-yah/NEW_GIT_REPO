@@ -7,6 +7,17 @@ jobs:
   dotnet-job:
     runs-on: ubuntu-latest
     steps:
-    - name: DOTNET PIPELINE
-      run: echo "THIS IS DOTNET PIPELINE"
+    - name: checkout repo
+      uses: actions/checkout@v4
+
+    - name: set up python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: python file
+      run: python dotnet.py
+
+    - name: python version
+      run: python --version
 
