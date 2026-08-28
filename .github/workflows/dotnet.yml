@@ -7,6 +7,6 @@ jobs:
   dotnet-job:
     runs-on: ubuntu-latest
     steps:
-      name: DOTNET PIPELINE
-      run: echo "THIS IS DOTNET PIPELINE"
+    - name: DOTNET PIPELINE
+    - run: echo "THIS IS DOTNET PIPELINE"
 
