@@ -2,11 +2,11 @@ name: DOTNET PIPELINE
 on:
   push:
     branches:
-    - master
+     - master
 jobs:
   dotnet-job:
     runs-on: ubuntu-latest
     steps:
     - name: DOTNET PIPELINE
-    - run: echo "THIS IS DOTNET PIPELINE"
+      run: echo "THIS IS DOTNET PIPELINE"
 
