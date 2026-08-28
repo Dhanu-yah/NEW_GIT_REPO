@@ -1,0 +1,3 @@
+print("PIPELINE FROM DOTNET")
+print("HELLO TO ALL FROM DOTNET")
+
