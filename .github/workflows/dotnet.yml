@@ -15,6 +15,9 @@ jobs:
       with:
         python-version: "3.13"
 
+    - name: requirements
+      run: pip install -r requirements.txt
+
     - name: python file
       run: python dotnet.py
 
