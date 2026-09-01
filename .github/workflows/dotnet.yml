@@ -19,7 +19,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: python file
-      run: python dotnet.py
+      run: python detnet.py
 
     - name: python version
       run: python --version
