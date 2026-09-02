@@ -3,7 +3,7 @@ pipeline{
      stages{
          stage('CHECKOUT') {
              steps {
-                         echo 'CHECKING THE APPLICATION'
+                         sh 'ls -la'
              }
          }
             
