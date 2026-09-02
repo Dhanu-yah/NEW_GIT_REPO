@@ -7,9 +7,9 @@ pipeline{
              }
          }
             
-         stage('BUILDING') {
+         stage('PYTHON VERSION') {
              steps{
-                       echo 'BUILDING THE APPLICATION'
+                       sh 'python --version'
              }
          }
            
