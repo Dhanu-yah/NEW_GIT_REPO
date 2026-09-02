@@ -1,27 +1,34 @@
-pipeline {
-    agent any
-    stages {
+pipeline{
+     agent any
+     stages{
+         stage('CHECKOUT') {
+             steps {
+                         echo 'CHECKING THE APPLICATION'
+             }
+         }
+            
+         stage('BUILDING') {
+             steps{
+                       echo 'BUILDING THE APPLICATION'
+             }
+         }
+           
+          stage('TESTING') {
+              steps{
+                       echo 'TESTING THE APPLICATION'
+              }
+          }
+       
+          stage('DEPLOYING') {
+              steps{
+                       echo 'DEPLOYING THE APPLICATION'
+              }
+          }
 
-        stage('BUILD') {
-            steps {
-                    echo 'Building the application'
-            }
-        }
-
-        stage('TEST') {
-            steps {
-                    echo 'TESTING the application'
-            }
-       }
-
-       stage('DEPLOY') {
-           steps {
-                   echo 'Deploying the application'
-           }
       }
+  }
+                     
 
-
-    }
-}
+                        
 
 
