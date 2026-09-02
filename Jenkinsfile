@@ -13,9 +13,9 @@ pipeline{
              }
          }
            
-          stage('TESTING') {
+          stage('INSTALL DEPENDENCIES') {
               steps{
-                       echo 'TESTING THE APPLICATION'
+                       sh 'pip install -r requirements.txt'
               }
           }
        
