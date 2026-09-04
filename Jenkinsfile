@@ -15,8 +15,8 @@ pipeline{
            
           stage('INSTALL DEPENDENCIES') {
               steps{
-                       sh 'python3 -m venv .ven
-                          .venv/bin/pip install -r requirements.txt'
+                       sh 'python3 -m venv .venv
+                            .venv/bin/pip install -r requirements.txt'
               }
           }
        
