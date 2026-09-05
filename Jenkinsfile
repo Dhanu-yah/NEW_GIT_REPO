@@ -22,7 +22,7 @@ pipeline{
               }
           }
           
-          stage('TEST') {
+          stage('TESTING PHASE') {
               steps{
                     sh '.venv/bin/python -c "import requests; print(requests.__version__)"'
               }
