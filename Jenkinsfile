@@ -21,6 +21,12 @@ pipeline{
                           '''
               }
           }
+          
+          stage('TEST') {
+              steps{
+                    sh '.venv/bin/python -c "import requests; print(requests.__version__)"'
+              }
+         }
        
           stage('DEPLOYED') {
               steps{
