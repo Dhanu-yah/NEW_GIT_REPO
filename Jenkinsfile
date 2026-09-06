@@ -32,7 +32,7 @@ pipeline{
 
           stage('DOCKER BUILD STAGES') {
               steps{
-                    sh 'docker build -t hello-python:1.0 .'
+                    sh 'docker build -t hello-python123:1.0 .'
               }
           }
 
