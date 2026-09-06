@@ -21,12 +21,21 @@ pipeline{
                           '''
               }
           }
+
           
           stage('TESTING PHASE') {
               steps{
                     sh '.venv/bin/python -c "import requests; print(requests.__version__)"'
               }
          }
+
+
+          stage('DOCKER BUILD') {
+              steps{
+                    sh 'docker build -t hello-python:1.0 .'
+              }
+          }
+
        
           stage('DEPLOYED') {
               steps{
