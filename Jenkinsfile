@@ -30,7 +30,7 @@ pipeline{
          }
 
 
-          stage('DOCKER BUILD') {
+          stage('DOCKER BUILD STAGE') {
               steps{
                     sh 'docker build -t hello-python:1.0 .'
               }
