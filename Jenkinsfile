@@ -37,7 +37,7 @@ pipeline{
           }
 
        
-          stage('FINAL STAGE-DEPLOYED') {
+          stage('DEPLOYEMENT STAGE') {
               steps{
                        echo 'DEPLOYED THE APPLICATION'
               }
