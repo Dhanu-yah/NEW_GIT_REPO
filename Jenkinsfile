@@ -39,7 +39,7 @@ pipeline{
        
           stage('DEPLOYED') {
               steps{
-                       echo 'DEPLOYING THE APPLICATION'
+                       echo 'DEPLOYED THE APPLICATION'
               }
           }
 
