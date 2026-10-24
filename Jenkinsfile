@@ -25,14 +25,14 @@ pipeline{
           
           stage('TESTING PHASE') {
               steps{
-                    sh '.venv/bin/python -c "import requests; print(requests.__version__)"'
+                    sh "pwd"
               }
          }
 
 
           stage('DOCKER BUILD STAGES') {
               steps{
-                    sh 'docker build -t hello-python:2.0 .'
+                    sh 'docker ps -a'
               }
           }
 
