@@ -23,23 +23,23 @@ pipeline{
           }
 
           
-          stage('TESTING PHASE') {
+          stage('DOCKER BUILD') {
               steps{
-                    sh "pwd"
+                    sh ' docker build -t app:5.0 . '
               }
          }
 
 
           stage('DOCKER BUILD STAGES') {
               steps{
-                    sh 'docker ps -a'
+                    sh 'docker images'
               }
           }
 
        
           stage('DEPLOYEMENT STAGE') {
               steps{
-                       echo 'DEPLOYING THE APPLICATION'
+                       echo 'DEPLOYED THE APPLICATION'
               }
           }
 
